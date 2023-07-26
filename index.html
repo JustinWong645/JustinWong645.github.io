@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4426949f61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li> <!--talk about my journey, use storyboard concept in the future when you have more experience-->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Data Scientist</p>
+            <h1>Hi! I'm <span>Justin</span> Wong from<br> Nanyang Technological University</h1>
+        </div>
+    </div>
+</div>  
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="">
+            </div>
+            <div class="about-col-2"></div>
+        </div>
+    </div>
+</div>
+
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_1512.jpeg", class="scaled-image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+
+                <p>Nice to meet you! As an avid learner and an aspiring data scientist with a passion for economics,
+                 I seek to expand domain and industry knowledge by connecting with like-minded professionals. My fascination lies  
+                 in the transformative power of data science and artificial intelligence within financial systems and I hope 
+                 to pursue a career in fintech. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning</span><br>Employing ML tools such as PyTorch and Tensorflow</li>
+                        <li><span>Software Development</span><br>Building software applications</li>
+                        <li><span>Data Analysis</span><br>Making sense of data</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Leadership</span></li>
+                        <li><span>NTU Tanjong Hall Financial Controller</span><span style="float: right;">2023-2024</span><br>Managing hall finances and a team of 16 members</li>
+                        <li><span>NTU Tanjong Hall Business Secretary</span><span style="float: right;">2022-2023</span><br>Liaising with corporate entities and hosted large scale events</li>
+                        <li><span>NTU IEEE Business Secretary</span><span style="float: right;">2022-2023</span><br>Liaising with corporate entities and hosted flagship 24hr hackathon event</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>Bachelor of Data Science and Artificial Intelligence</span>
+                            <span style="float: right;">2022-Present</span>
+                            <span><br>Nanyang Technological University</span>
+                        </li>
+                        <li>Relevant Modules:</li>
+                        <ul>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Object Oriented Design and Programming</li>
+                            <li>Introduction to Data Science and Artificial Intelligence</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-list 1  (2).jpg">
+                <div class="layer">
+                    <h2>Twitter Sentiment Analysis</h2>
+                    <p>Machine Learning using sentiment scores to predict movement of AAPL stock price </p>
+                    <a href="https://github.com/JustinWong645/Twitter-Sentiment-Analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-list 2.jpg">
+                <div class="layer">
+                    <h2>FYP Registration Application System</h2>
+                    <p>An efficient and modular system for final year project university students</p>
+                    <a href="https://github.com/timooo-thy/SC2002-MVC"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>justinwong645@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+65-97310278</p>
+                <div class="social-icons">
+                    <a href="https://github.com/JustinWong645"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/justin-wong-6b213b170/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/justinwong_resume.docx" download class="btn btn2">Download CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");    
+    }
+</script>
+
+<script>
+    var sidemenu1 = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu1.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu1.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx3HcnJBA-Vc5X92B-i_FLzbKM0grvVJHTGmsFnSNxvBF_ZGMjYSqEXPvjpYSL4P9oGYw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
